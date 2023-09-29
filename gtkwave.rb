@@ -3,10 +3,12 @@ class Gtkwave < Formula
   homepage "https://gtkwave.sourceforge.net"
   license "GPL-2.0-or-later"
   head "https://github.com/gtkwave/gtkwave.git", branch: "master"
+  revision 2
 
   depends_on "desktop-file-utils" => :build # for update-desktop-database
-  depends_on "shared-mime-info" => :build 
+  depends_on "shared-mime-info" => :build
   depends_on "gobject-introspection" => :build
+  depends_on "gtk-mac-integration" => :build
   depends_on "meson" => :build
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build
@@ -14,7 +16,7 @@ class Gtkwave < Formula
 
   patch do
 	url "https://raw.githubusercontent.com/randomplum/homebrew-gtkwave/main/macos_compat.diff"
-	sha256 "d55b5314564d8461531e0d7ce63ffb004f769f381e4468181257dd3016fe919b"
+	sha256 "89da0faf262ae81f0ea0f292603467cde09ba5558dffc8d825ca399b5a6af3b7"
 	end
 
   def install
