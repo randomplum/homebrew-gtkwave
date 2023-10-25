@@ -2,7 +2,7 @@ class Gtkwave < Formula
   desc "GTKWave"
   homepage "https://gtkwave.sourceforge.net"
   license "GPL-2.0-or-later"
-  head "https://github.com/randomplum/gtkwave.git", branch: "formula"
+  head "https://github.com/randomplum/gtkwave.git", branch: "master"
   revision 2
 
   depends_on "desktop-file-utils" => :build # for update-desktop-database
@@ -13,11 +13,6 @@ class Gtkwave < Formula
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build
   depends_on "gtk+3"
-
-  patch do
-	url "https://raw.githubusercontent.com/randomplum/homebrew-gtkwave/main/macos_compat.diff"
-	sha256 "7f5f50dd6c1e25a6d0d5b8f05ca9f32ef650a30bff2fa128086b3daa7ad19dd2"
-	end
 
   def install
     ENV["DESTDIR"] = "/"
