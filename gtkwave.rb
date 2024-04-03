@@ -3,7 +3,7 @@ class Gtkwave < Formula
   homepage "https://gtkwave.sourceforge.net"
   license "GPL-2.0-or-later"
   head "https://github.com/randomplum/gtkwave.git", branch: "master"
-  revision 2
+  revision 3
 
   depends_on "desktop-file-utils" => :build # for update-desktop-database
   depends_on "shared-mime-info" => :build
@@ -16,7 +16,7 @@ class Gtkwave < Formula
 
   def install
     ENV["DESTDIR"] = "/"
-    system "meson", "setup", "build", *std_meson_args
+    system "meson", "setup", "build", "-Dintrospection=false", *std_meson_args
     system "meson", "compile", "-C", "build", "--verbose"
     system "meson", "install", "-C", "build"
   end
