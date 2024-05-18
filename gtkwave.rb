@@ -2,7 +2,7 @@ class Gtkwave < Formula
   desc "GTKWave"
   homepage "https://gtkwave.sourceforge.net"
   license "GPL-2.0-or-later"
-  head "https://github.com/randomplum/gtkwave.git", branch: "master"
+  head "https://github.com/gtkwave/gtkwave.git", branch: "master"
   revision 3
 
   depends_on "desktop-file-utils" => :build # for update-desktop-database
