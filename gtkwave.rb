@@ -1,6 +1,6 @@
 class Gtkwave < Formula
   desc "GTKWave"
-  homepage "https://gtkwave.sourceforge.net"
+  homepage "https://gtkwave.github.io/gtkwave/"
   license "GPL-2.0-or-later"
   head "https://github.com/gtkwave/gtkwave.git", branch: "master"
   revision 3
