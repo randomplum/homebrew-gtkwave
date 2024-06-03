@@ -1,9 +1,9 @@
 class Gtkwave < Formula
   desc "GTKWave"
-  homepage "https://gtkwave.sourceforge.net"
+  homepage "https://gtkwave.github.io/gtkwave/"
   license "GPL-2.0-or-later"
-  head "https://github.com/randomplum/gtkwave.git", branch: "master"
-  revision 3
+  head "https://github.com/gtkwave/gtkwave.git", branch: "master"
+  revision 4
 
   depends_on "desktop-file-utils" => :build # for update-desktop-database
   depends_on "shared-mime-info" => :build
