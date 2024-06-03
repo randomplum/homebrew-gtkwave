@@ -3,7 +3,7 @@ class Gtkwave < Formula
   homepage "https://gtkwave.github.io/gtkwave/"
   license "GPL-2.0-or-later"
   head "https://github.com/gtkwave/gtkwave.git", branch: "master"
-  revision 3
+  revision 4
 
   depends_on "desktop-file-utils" => :build # for update-desktop-database
   depends_on "shared-mime-info" => :build
